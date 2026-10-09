@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Написать статью - Почерк</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="index.html">Почерк.</a>
+            <nav>
+                <a href="index.html">Рекомендации</a>
+                <a href="editor.html">Написать</a>
+                <a href="profile.html">Профиль</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Написать статью</h1>
+        <p class="muted">Макет формы создания публикации.</p>
+
+        <form class="article">
+            <label for="title">Заголовок</label>
+            <input id="title" type="text" placeholder="Название статьи">
+
+            <label for="category">Рубрика</label>
+            <select id="category">
+                <option>Жизнь</option>
+                <option>Книги</option>
+                <option>Еда</option>
+                <option>Технологии</option>
+                <option>Другое</option>
+            </select>
+
+            <label for="text">Текст статьи</label>
+            <textarea id="text" rows="12"
+                      placeholder="Начните писать..."></textarea>
+
+            <button type="button" disabled>Опубликовать</button>
+            <p class="muted">Сохранение появится в проекте с бэкендом.</p>
+        </form>
+    </main>
+
+    <footer>Почерк - учебный сайт публикаций</footer>
+</body>
+</html>
