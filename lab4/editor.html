@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Написать статью - Почерк</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__inner container">
+            <a class="logo" href="index.html">Почерк.</a>
+            <nav class="nav" aria-label="Основная навигация">
+                <a class="nav__link" href="index.html">Рекомендации</a>
+                <a class="nav__link" href="editor.html">Написать</a>
+                <a class="nav__link" href="profile.html">Профиль</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main container">
+        <h1>Написать статью</h1>
+        <p class="muted">Заполните форму. Данные статьи будут выведены в консоль браузера.</p>
+
+        <form class="article publication-form">
+            <label class="publication-form__label" for="title">Заголовок</label>
+            <input class="publication-form__field" id="title" name="title" type="text" required placeholder="Название статьи">
+
+            <label class="publication-form__label" for="category">Рубрика</label>
+            <select class="publication-form__field" id="category" name="category">
+                <option>Жизнь</option>
+                <option>Книги</option>
+                <option>Еда</option>
+                <option>Технологии</option>
+                <option>Другое</option>
+            </select>
+
+            <label class="publication-form__label" for="text">Текст статьи</label>
+            <textarea class="publication-form__field" id="text" name="text" rows="12" required
+                      placeholder="Начните писать..."></textarea>
+
+            <button class="publication-form__button" type="submit">Отправить</button>
+            <p class="publication-form__status" role="status"></p>
+        </form>
+    </main>
+
+    <footer class="footer">Почерк - учебный сайт публикаций</footer>
+</body>
+</html>
